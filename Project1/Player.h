@@ -1,3 +1,7 @@
+#ifndef PLAYER_INCLUDED
+#define PLAYER_INCLUDED
+class Arena;
+
 class Player
 {
 public:
@@ -22,3 +26,4 @@ private:
     int    m_age;
     bool   m_dead;
 };
+#endif //CIRCLE_INCLUDED

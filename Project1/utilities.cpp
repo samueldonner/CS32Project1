@@ -1,7 +1,7 @@
-#include <iostream>
-#include <cmath>
 #include "globals.h"
 #include "Arena.h"
+#include "Game.h"
+#include <random>
 
 using namespace std;
 

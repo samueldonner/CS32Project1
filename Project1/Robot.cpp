@@ -1,10 +1,7 @@
 #include "Robot.h"
+#include "Arena.h"
 #include "globals.h"
 #include <iostream>
-#include <string>
-#include <random>
-#include <utility>
-#include <cstdlib>
 using namespace std;
 
 Robot::Robot(Arena* ap, int r, int c)

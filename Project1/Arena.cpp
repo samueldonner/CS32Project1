@@ -1,10 +1,8 @@
 #include "Arena.h"
+#include "Robot.h"
 #include "globals.h"
+#include "Player.h"
 #include <iostream>
-#include <string>
-#include <random>
-#include <utility>
-#include <cstdlib>
 using namespace std;
 
 Arena::Arena(int nRows, int nCols)

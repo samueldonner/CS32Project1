@@ -1,9 +1,6 @@
 #include "Player.h"
+#include "Arena.h"
 #include <iostream>
-#include <string>
-#include <random>
-#include <utility>
-#include <cstdlib>
 using namespace std;
 
 Player::Player(Arena* ap, int r, int c)

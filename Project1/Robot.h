@@ -1,3 +1,7 @@
+#ifndef ROBOT_INCLUDED
+#define ROBOT_INCLUDED
+class Arena;
+
 class Robot
 {
 public:
@@ -18,3 +22,4 @@ private:
     int    m_col;
     int    m_health;
 };
+#endif //CIRCLE_INCLUDED

@@ -1,3 +1,7 @@
+#ifndef GAME_INCLUDED
+#define GAME_INCLUDED
+class Arena;
+
 class Game
 {
 public:
@@ -11,3 +15,4 @@ public:
 private:
     Arena* m_arena;
 };
+#endif //CIRCLE_INCLUDED

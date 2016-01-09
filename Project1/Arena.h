@@ -1,3 +1,9 @@
+#ifndef ARENA_INCLUDED
+#define ARENA_INCLUDED
+class Robot;
+class Player;
+#include "globals.h"
+
 class Arena
 {
 public:
@@ -27,3 +33,4 @@ private:
     Robot*  m_robots[MAXROBOTS];
     int     m_nRobots;
 };
+#endif //CIRCLE_INCLUDED

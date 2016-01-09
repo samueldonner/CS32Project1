@@ -1,10 +1,8 @@
 #include "Game.h"
 #include "globals.h"
+#include "Player.h"
+#include "Arena.h"
 #include <iostream>
-#include <string>
-#include <random>
-#include <utility>
-#include <cstdlib>
 using namespace std;
 
 Game::Game(int rows, int cols, int nRobots)

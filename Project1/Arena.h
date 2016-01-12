@@ -2,7 +2,9 @@
 #define ARENA_INCLUDED
 class Robot;
 class Player;
+class History;
 #include "globals.h"
+#include "History.h"
 
 class Arena
 {
@@ -19,6 +21,7 @@ public:
     int     nRobotsAt(int r, int c) const;
     bool    determineNewPosition(int& r, int& c, int dir) const;
     void    display() const;
+    History& history();
     
     // Mutators
     bool   addRobot(int r, int c);
@@ -32,5 +35,6 @@ private:
     Player* m_player;
     Robot*  m_robots[MAXROBOTS];
     int     m_nRobots;
+    History m_history;
 };
 #endif //CIRCLE_INCLUDED

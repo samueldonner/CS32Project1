@@ -75,10 +75,10 @@
 		FA1D72361C3ED5B1006A6379 /* Project1 */ = {
 			isa = PBXGroup;
 			children = (
-				FA1D72411C3ED80D006A6379 /* Arena.h */,
 				FA1D723E1C3ED748006A6379 /* Robot.h */,
 				FA1D723F1C3ED75D006A6379 /* Player.h */,
 				FA1D72401C3ED7F0006A6379 /* History.h */,
+				FA1D72411C3ED80D006A6379 /* Arena.h */,
 				FA1D72421C3ED85A006A6379 /* Game.h */,
 				FA1D72431C3ED872006A6379 /* globals.h */,
 				FA1D72441C3ED887006A6379 /* Robot.cpp */,
@@ -273,6 +273,7 @@
 				FA1D723D1C3ED5B1006A6379 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -62,11 +62,15 @@ void Game::play()
     {
         m_arena->display();
         cout << endl;
-        cout << "Move (u/d/l/r//q): ";
+        cout << "Move (u/d/l/r//h/q): ";
         string action;
         getline(cin,action);
         if (action.size() == 0)  // player stands
+        {
+            m_arena->moveRobots();
             p->stand();
+        }
+        
         else
         {
             switch (action[0])
@@ -76,15 +80,21 @@ void Game::play()
                     continue;
                 case 'q':
                     return;
+                case 'h':
+                    m_arena->history().display();
+                    cout<<endl<<"Press enter to continue.";
+                    cin.ignore(10000, '\n');
+                    m_arena->display();
+                    break;
                 case 'u':
                 case 'd':
                 case 'l':
                 case 'r':
                     p->moveOrAttack(decodeDirection(action[0]));
+                    m_arena->moveRobots();
                     break;
             }
         }
-        m_arena->moveRobots();
     } while ( ! m_arena->player()->isDead()  &&  m_arena->robotCount() > 0);
     m_arena->display();
 }
